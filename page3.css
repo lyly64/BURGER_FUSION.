@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --font:Reem Kufi Fun;
+    --font2: Open Sans;
+    --green:rgb(29, 77, 53);
+    --dark:#141414;
+    --light-gray:#dedede;
+    --dark-gray:#a1a1a1;
+}
+
+
+header{
+   
+    background-color:var(--dark) ;
+
+    
+}
+nav{
+    width: 90%;
+   margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 170px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.navigation-list{
+    list-style: none;
+    display: flex;
+    margin-right: 3rem;
+}
+
+.navigation{
+    font-size: 2rem;
+    font-family: var(--font);
+    margin-inline: 2rem;
+    cursor: pointer;
+    transition: .5s;
+
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+   transition: .3s;
+}
+header nav a:hover{
+    color: var(--green);
+}
+.fa-bars{
+    color: white;
+    transform: scale(2);
+    cursor: pointer;
+    display: none;
+}
+
+
+main{
+    background-color: var(--dark);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-us{
+    width: 30%;
+    font-family: var(--font2);
+    color: white;
+
+}
+.contact-us h1{
+    margin-bottom: 15px;
+    font-weight: 100;
+    color: var(--green);
+    position: relative;
+
+}
+.contact-us h1::before{
+    content: "";
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%,50%);
+    background-color: var(--green);
+}
+.contact-us h1::after{
+    content: "";
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,50%);
+    background-color: var(--green);
+}
+
+
+.contact-us p{
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.contact-us i{
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+}
+
+.container{
+    width: 50%;
+    height: 95%;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    
+    white-space: nowrap;
+}
+
+.titles{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-family: var(--font);
+    text-transform: capitalize;
+   position: relative;
+
+}
+.title-indicator{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transform: translate(-50%);
+    transition: .5s;
+
+}
+.titles li{
+    padding: 5px 0;
+    cursor: pointer;
+
+
+}
+.map-title{
+    color: var(--green);
+   
+}
+
+.slash{
+    width: 3px;
+    height: 25px;
+    background-color: var(--dark-gray);
+    position: absolute;
+    
+}
+
+.message-title{
+    color: var(--dark-gray);
+}
+
+.slide{
+    width: 200%;
+    height: 91%;
+   
+    display: flex;
+    transform: translate(0%);
+    transition: .5s;
+}
+
+.map-container{
+    width: 50%;
+  
+    position: relative;
+    height: 100%;
+    
+}
+
+.locaux-titles{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-top: 5px;
+    position: relative
+}
+.locaux-titles li{
+    padding: 3px 0;
+    font-family: var(--font);
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+.tizi{
+    color: var(--dark-gray);
+}
+
+.alger{
+    color: var(--dark-gray);
+}
+.oran{
+    color:var(--dark-gray) ;
+}
+#cliked{
+    color: var(--green);
+}
+.locaux-indicator{
+    width: 25%;
+    height: 2px;
+    background-color: var(--green);
+    position: absolute;
+    bottom: 0;
+    left: 16.5%;
+    transform: translate(-50%);
+    transition: .5s;
+
+}
+
+.map{
+    position: absolute;
+    bottom: 0;
+    height: 85%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.messag-container{
+    width: 50%;
+    height:100%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(0%)
+
+  
+}
+
+.full-name label,.email label,.question label{
+    display: block;
+    font-family: var(--font);
+    color: var(--dark-gray);
+}
+
+.full-name input,.email input,.question input{
+    padding:5px 5px;
+    outline: none;
+    border: 1px solid var(--green);
+    color: var(--green);
+    font-family: var(--font2);
+    border-radius: 3px;
+    
+}
+
+.question input{
+    height: 35px;
+}
+
+#sub-btn{
+    padding: 5px 10px;
+    font-family: var(--font);
+    cursor: pointer;
+    background-color: var(--green);
+    border-radius: 5px;
+    border: solid 1px var(--green);
+    color: white;
+
+}
+
+footer{
+    width: 100%;
+    height: 210px;
+    
+    animation: footer-ani 5s infinite;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+footer ul{
+    list-style: none;
+    position: relative;
+}
+
+.social-medias{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 15%;
+
+}
+.social-medias li{
+    transform: scale(2);
+}
+
+.social-medias li:hover{
+    transform: scale(2.1);
+}
+
+.phone,.insta,.facebook{
+    position: absolute;
+    
+    left: 0;
+    top:100%;
+   font-size: 8px;
+   padding: 2px 5px;
+   border-radius: 5px;
+    transform: translate(-50%);
+    background-color: white;
+    color:black ;
+    display: none;
+    
+}
+
+.s1:hover .phone{
+    display: block;
+}
+
+.s2:hover .insta{
+    
+    display: block;
+}
+
+.s3:hover .facebook{
+    display: block;
+}
+
+
+footer li{
+    font-family: var(--font);
+    cursor: pointer;
+    
+    transition: .3s;
+
+}
+
+footer li:hover{
+    transform: scale(1.1);
+}
+
+.fc{
+    text-decoration: underline;
+    
+}
+
+.fc:hover{
+    transform: scale(1);
+}
+
+footer div{
+    border-left:2px solid white;
+    height: 70%;
+    display:flex;
+    align-items: center;
+    padding-left: 10px;
+    position: relative;
+}
+footer div input{
+    padding: .5rem 1rem;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+footer div button{
+    padding: .3rem .7rem;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: transparent;
+    font-family: var(--font);
+    margin-left: 3px;
+    cursor: pointer;
+    animation: button-ani 5s infinite;
+    font-weight: 600;
+}
+
+footer div input::placeholder{
+    font-family: var(--font);
+    color: white;
+}
+
+
+.copy-right{
+    font-family: var(--font);
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.popUp{
+    position: absolute;
+    top: 0;
+    background-color: white;
+    color: black;
+    font-family: var(--font);
+    padding: 2px 5px;
+    border-radius: 5px;
+    display: none;
+    
+
+}
+
+
+/* media query for navigation bar */
+
+@media (max-width:800px){
+    
+    .navigation-list{
+        margin-right: 0;
+    }
+}
+@media(max-width:700px){
+    
+    .navigation-list{
+        margin-right: 0rem;
+    }
+    .navigation{
+        margin-inline: 1rem;
+    }
+}
+@media (max-width:570px){
+    .navigation-list{
+        display: none;
+    }
+
+    .navigation-list{
+       
+        display: none;
+       
+    }
+    .fa-bars{
+      display: block;
+
+      transition: .3s;
+    }
+    .fa-bars:hover{
+        transform: scale(2.1);
+    }
+}
+/*media query*/
+
+/*extra small*/
+@media (max-width:576px){
+    footer ul li{
+        font-size: 12px;
+    }
+
+    footer div input{
+        width: 100px;
+    }
+    footer div button{
+        padding: .3rem 0;
+    } 
+}
+
+/*small*/
+@media (min-width:576px) and (max-width:768px){
+    footer ul li{
+        font-size: 12px;
+    }
+
+    footer div input{
+        width: 100px;
+    }
+    footer div button{
+        padding: .3rem 0;
+    }
+}
+/*animation*/
+@keyframes  footer-ani{
+    0%{
+        background-color: var(--green);
+    }
+    50%{
+        background-color: black;
+
+    }
+    100%{
+        background-color: var(--green);
+    }
+}
+
+@keyframes  button-ani{
+    0%{
+        color: var(--green);
+    }
+    50%{
+        color: black;
+
+    }
+    100%{
+        color: var(--green);
+    }
+}
